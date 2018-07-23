@@ -2,11 +2,9 @@
 
 minetest.register_node("cave_explorer:light", {
 	description = "Cave Light",
-	--drawtype = "glasslike",
 	tiles = {"default_stone.png^cave_explorer_light.png"},
 	paramtype = "light",
-	--sunlight_propagates = true,
-	is_ground_content = false,
+	is_ground_content = true,
 	groups = {cracky = 3, oddly_breakable_by_hand = 3},
 	groups = {cracky = 3, stone = 1},
 	drop = 'default:cobble',
